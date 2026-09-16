@@ -381,6 +381,13 @@ class Gate2:
             f"{decision['verified_artifacts']}/{decision['total_runs']} artifacts verified",
             flush=True,
         )
+        if decision.get("dependency_deviation_datasets"):
+            print(
+                "WARNING: dependency-version drift recorded for "
+                + ", ".join(decision["dependency_deviation_datasets"])
+                + "; see gate-decision.json",
+                flush=True,
+            )
         return 0
 
 

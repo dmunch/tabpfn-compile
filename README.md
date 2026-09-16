@@ -48,7 +48,9 @@ experiments and verification records, applies the registered Landsat CPU fallbac
 after an MPS out-of-memory failure, and regenerates the aggregate report. Inspect
 the planned work without changing files with `scripts/gate2.py --dry-run`. Existing
 incomplete artifacts are never overwritten; use `--force --dataset NAME` to preserve
-one under `artifacts/gate2/superseded/` and rerun it.
+one under `artifacts/gate2/superseded/` and rerun it. Package-version differences
+between resumed and existing dataset artifacts are recorded as protocol deviations
+in `gate-decision.json` rather than preventing report generation.
 
 The scripts accept historical artifact metadata containing the original nanotabicl paths and resolve it against this repository by filename.
 

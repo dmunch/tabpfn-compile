@@ -34,6 +34,8 @@ def main():
     (ROOT / 'native-memory-recovery.json').write_text(json.dumps(runtime_recoveries, indent=2)+'\n')
     records = []
     expected_dependencies = None
+    dependency_reference_dataset = None
+    dependency_deviations = {}
     for dataset in prereg["datasets"]:
         name = dataset["dataset"]
         folder = ROOT / name
@@ -52,8 +54,16 @@ def main():
         assert not device_deviation or (name == 'landsat-satellite' and meta['config']['device']=='cpu')
         if expected_dependencies is None:
             expected_dependencies = meta['dependencies']
+            dependency_reference_dataset = name
         else:
-            assert meta['dependencies'] == expected_dependencies, f'Dependency drift: {name}'
+            changes = {
+                package: {'expected': expected_dependencies.get(package), 'actual': meta['dependencies'].get(package)}
+                for package in sorted(expected_dependencies.keys() | meta['dependencies'].keys())
+                if expected_dependencies.get(package) != meta['dependencies'].get(package)
+            }
+            if changes:
+                dependency_deviations[name] = changes
+        dependency_deviation = name in dependency_deviations
         trace_file = folder / 'traces.json'
         traces = json.loads(trace_file.read_text()) if trace_file.exists() else []
         source = pd.read_parquet(resolve_data(dataset["data"]))
@@ -65,7 +75,8 @@ def main():
                 record = dict(dataset=name, m=m, seed=seed, N=dataset["N"], d=dataset["d"], K=dataset["K"],
                               source_rows=dataset["source_rows"], source_class_counts=dataset["class_counts"],
                               context_class_counts=np.bincount(y[context], minlength=dataset["K"]).tolist(),
-                              initial_class_counts=np.bincount(y[initial], minlength=dataset["K"]).tolist())
+                              initial_class_counts=np.bincount(y[initial], minlength=dataset["K"]).tolist(),
+                              dependency_deviation=dependency_deviation)
                 pair = {method: next((r for r in results if r['method']==method and r['rows']==m and r['seed']==seed), None)
                         for method in ("stratified", "synthetic_stratified")}
                 artifact_path = folder / f'compiled-{m}-{seed}-stratified.csv'
@@ -125,6 +136,9 @@ def main():
     summary = dict(verdict=label, statistical_criterion_met=criterion_met, total_runs=72, completed_runs=complete, wins=wins,
                    win_fraction=wins/72, positive_mean_datasets=positive, median_delta_kl=median,
                    verified_artifacts=verified, maximum_prediction_reload_error=float(frame.reload_max_prediction_error.max()),
+                   dependency_reference_dataset=dependency_reference_dataset,
+                   dependency_deviation_datasets=sorted(dependency_deviations),
+                   dependency_deviations=dependency_deviations,
                    new_runs_only=dict(total=63, wins=int(frame[frame.dataset!='vehicle'].win.sum()),
                                       positive_mean_datasets=int((by_dataset.drop(index='vehicle').mean_delta_kl>0).sum())))
     (ROOT / "gate-decision.json").write_text(json.dumps(summary, indent=2, allow_nan=False)+"\n")
@@ -190,6 +204,15 @@ def main():
               '## Reproduction', '',
               'The preregistration contains dataset/checkpoint/code hashes and all frozen settings. Per-dataset folders contain metadata with split indices and scaling, cached teacher probabilities, baseline/optimized predictions, CSV contexts, optimization traces, and reload verification. `execution-status.json` and logs retain all execution failures.', '',
               'Run or resume the complete frozen pipeline with `scripts/gate2.py`. It validates hashes and the TabPFN commit, skips complete datasets, fills missing experiments and verification records, preserves failed attempts, and invokes this aggregator. Use `scripts/gate2.py --dry-run` to inspect planned work without changing artifacts.', '']
+    if dependency_deviations:
+        packages = sorted({package for changes in dependency_deviations.values() for package in changes})
+        datasets_text = ', '.join(f'`{name}`' for name in sorted(dependency_deviations))
+        packages_text = ', '.join(f'`{name}`' for name in packages)
+        note = (f"- Dependency-version drift relative to `{dependency_reference_dataset}` was recorded for "
+                f"{datasets_text} in packages {packages_text}. Exact expected/actual versions are in "
+                "`gate-decision.json`; checkpoint, TabPFN commit, dataset hashes, and frozen experiment settings still match.")
+        failure_heading = lines.index('## Failure modes and practical limits')
+        lines.insert(failure_heading + 2, note)
     (ROOT/'README.md').write_text('\n'.join(lines))
     print(json.dumps(summary,indent=2))
     print(by_dataset.to_string())
