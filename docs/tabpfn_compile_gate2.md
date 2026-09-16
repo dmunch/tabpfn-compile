@@ -51,7 +51,8 @@ Record before/after compile/validation/test metrics; absolute and relative impro
 ## Files
 
 - [Machine-readable preregistration, coverage, data provenance and hashes](../artifacts/gate2/preregistration.json)
-- [Execution and verification runner](../scripts/run_tabpfn_gate2.py)
+- [Resumable execution, verification, and reporting driver](../scripts/gate2.py)
+- [Original immutable execution runner](../scripts/run_tabpfn_gate2.py)
 - [Aggregation and diagonal plot](../scripts/summarize_tabpfn_gate2.py)
 - Final report: `artifacts/gate2/README.md` (generated only after all eight datasets have been attempted).
 

@@ -1,0 +1,12 @@
+{
+  "migrated_at": "2026-09-16",
+  "note": "The preregistration remains immutable and records the original nanotabicl paths and hashes. These are the content hashes of the path-adjusted copies in this dedicated repository.",
+  "historical_code_sha256": {
+    "benchmarks/runners/tabpfn_compile_experiment.py": "2e7e111441ae0171f6e66ca036a5f8d8899bf6d8ba92e6eea69547699dd2e61c",
+    "benchmarks/runners/verify_tabpfn_compile_artifacts.py": "5dee1f527dc40f2f89c0a8d45e7d47a58211773f419ec6b3ace214a8b6d05d02"
+  },
+  "relocated_code_sha256": {
+    "scripts/tabpfn_compile_experiment.py": "bd0b33ac100a490b6597e653b5e06e863e0b971fefd5be3ef5b3ebb031a79554",
+    "scripts/verify_tabpfn_compile_artifacts.py": "b7562565fb4f0a085830fefbfea8553cbfa743fb69f15dfd327f9c9d9ed5d92d"
+  }
+}

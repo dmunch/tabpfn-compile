@@ -1,0 +1,247 @@
+{
+  "registered_at": "2026-09-15T19:49:43.203095+00:00",
+  "selection": "Five eligible local complete numerical tasks plus three UCI numerical multiclass tasks; no Gate 2 predictions inspected. No row/feature filtering, imputation, or recoding of features. Published UCI train/test files concatenated in that order, then the Gate 1 split applied.",
+  "balance_definition": "max/min class count <=1.5 balanced; >=2 materially imbalanced; N denotes context rows",
+  "datasets": [
+    {
+      "dataset": "vehicle",
+      "data": "benchmarks/data/parquet/vehicle.parquet",
+      "target": "vehicle_type",
+      "source_sha256": "769b97d0015818903f3547433f646e0eefa34f0d2849608d6c2900b280ab6e7c",
+      "source_rows": 846,
+      "N": 507,
+      "d": 18,
+      "K": 4,
+      "class_counts": {
+        "bus": 218,
+        "saab": 217,
+        "opel": 212,
+        "van": 199
+      },
+      "class_ratio": 1.0954773869346734,
+      "split_sizes": [
+        507,
+        169,
+        85,
+        85
+      ]
+    },
+    {
+      "dataset": "blood-transfusion-service-center",
+      "data": "benchmarks/data/parquet/blood-transfusion-service-center.parquet",
+      "target": "class",
+      "source_sha256": "d036e9092b01b2ba4123de4fddf53a10710b2fcf06593bbe057fd144da4f86d4",
+      "source_rows": 748,
+      "N": 448,
+      "d": 4,
+      "K": 2,
+      "class_counts": {
+        "1": 570,
+        "2": 178
+      },
+      "class_ratio": 3.202247191011236,
+      "split_sizes": [
+        448,
+        150,
+        75,
+        75
+      ]
+    },
+    {
+      "dataset": "diabetes",
+      "data": "benchmarks/data/parquet/diabetes.parquet",
+      "target": "diabetes_diagnosis",
+      "source_sha256": "90020f8144edb9db3169f77b882d6a41766c258e967f5efab0dcafe666bf5ed8",
+      "source_rows": 768,
+      "N": 460,
+      "d": 8,
+      "K": 2,
+      "class_counts": {
+        "tested_negative": 500,
+        "tested_positive": 268
+      },
+      "class_ratio": 1.8656716417910448,
+      "split_sizes": [
+        460,
+        154,
+        77,
+        77
+      ]
+    },
+    {
+      "dataset": "phoneme",
+      "data": "benchmarks/data/parquet/phoneme.parquet",
+      "target": "phoneme_sound_class",
+      "source_sha256": "2b51acf8870188506da972ec943edef7005f033950173b579aef5ab81838939e",
+      "source_rows": 5404,
+      "N": 3242,
+      "d": 5,
+      "K": 2,
+      "class_counts": {
+        "1": 3818,
+        "2": 1586
+      },
+      "class_ratio": 2.407313997477932,
+      "split_sizes": [
+        3242,
+        1081,
+        540,
+        541
+      ]
+    },
+    {
+      "dataset": "spambase",
+      "data": "benchmarks/data/parquet/spambase.parquet",
+      "target": "is_spam",
+      "source_sha256": "5c0de3dfb543461db5a6403e4a4249243d618ceab37733f686e59e930df73b82",
+      "source_rows": 4601,
+      "N": 2760,
+      "d": 57,
+      "K": 2,
+      "class_counts": {
+        "0": 2788,
+        "1": 1813
+      },
+      "class_ratio": 1.5377826806398236,
+      "split_sizes": [
+        2760,
+        920,
+        460,
+        461
+      ]
+    },
+    {
+      "dataset": "balance-scale",
+      "data": "benchmarks/data/parquet/balance-scale.parquet",
+      "target": "class",
+      "source_sha256": "583dd9571864f21d62acfb473a6cac0df40a9ca0d91fae5bfc570cc0c84238f5",
+      "source_rows": 625,
+      "N": 375,
+      "d": 4,
+      "K": 3,
+      "class_counts": {
+        "R": 288,
+        "L": 288,
+        "B": 49
+      },
+      "class_ratio": 5.877551020408164,
+      "split_sizes": [
+        375,
+        125,
+        62,
+        63
+      ]
+    },
+    {
+      "dataset": "image-segmentation",
+      "data": "benchmarks/data/parquet/image-segmentation.parquet",
+      "target": "class",
+      "source_sha256": "dd5a3148ac60bb5de11e1120ca653e7767dd73a1aa496a607ccf7ea12caf014a",
+      "source_rows": 2310,
+      "N": 1386,
+      "d": 19,
+      "K": 7,
+      "class_counts": {
+        "BRICKFACE": 330,
+        "SKY": 330,
+        "FOLIAGE": 330,
+        "CEMENT": 330,
+        "WINDOW": 330,
+        "PATH": 330,
+        "GRASS": 330
+      },
+      "class_ratio": 1.0,
+      "split_sizes": [
+        1386,
+        462,
+        231,
+        231
+      ]
+    },
+    {
+      "dataset": "landsat-satellite",
+      "data": "benchmarks/data/parquet/landsat-satellite.parquet",
+      "target": "class",
+      "source_sha256": "9294585064cf82f4c28047cffecb4ca884136d7fa4c0f4e959c5a8fdca4763bd",
+      "source_rows": 6435,
+      "N": 3861,
+      "d": 36,
+      "K": 6,
+      "class_counts": {
+        "1": 1533,
+        "7": 1508,
+        "3": 1358,
+        "5": 707,
+        "2": 703,
+        "4": 626
+      },
+      "class_ratio": 2.44888178913738,
+      "split_sizes": [
+        3861,
+        1287,
+        643,
+        644
+      ]
+    }
+  ],
+  "coverage": {
+    "binary": 4,
+    "multiclass": 4,
+    "low_dimensional": 4,
+    "medium_high_dimensional": 4,
+    "small_context": 4,
+    "larger_context": 3,
+    "balanced": 2,
+    "imbalanced": 4
+  },
+  "downloaded_source_sha256": {
+    "https://archive.ics.uci.edu/ml/machine-learning-databases/balance-scale/balance-scale.data": "5611187ef7345d807aa8ae22615945ade52a190537c0b1434bd44c3e877c5bb4",
+    "https://archive.ics.uci.edu/ml/machine-learning-databases/image/segmentation.data": "ed5b5aee8081bbe875357149f73f50d7085e22cc0897f5b52eb7b52fea969a5b",
+    "https://archive.ics.uci.edu/ml/machine-learning-databases/image/segmentation.test": "2e9e966479d54c6aaec309059376dd9c89c1b46bf3a23aceeefb36d20d93a189",
+    "https://archive.ics.uci.edu/ml/machine-learning-databases/statlog/satimage/sat.trn": "e896dc88a960fa2404160fc4c3cb3dc53fcf4afd80ba920bf2d261bd42d12613",
+    "https://archive.ics.uci.edu/ml/machine-learning-databases/statlog/satimage/sat.tst": "4b9167b8a92baafafed7c8809aef86d0683a5e685c19d98d119fa6974f0f2479"
+  },
+  "tabpfn_commit": "27f4b3032103a082e6e3d503b485f7f5205369e9",
+  "checkpoint_sha256": "ece4d67eadfea42eb0e610df5189bea60cb7f31073d81e9c7a019b76eacf0be3",
+  "checkpoint": "weights/tabpfn-v3.5-20260909.safetensors",
+  "frozen": {
+    "budgets": [
+      8,
+      32,
+      128
+    ],
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "steps": 50,
+    "lr": 0.01,
+    "batch_size": 64,
+    "initialization": "stratified",
+    "label_mode": "fixed",
+    "eval_every": 10,
+    "optimizer": "Adam default betas/eps/weight_decay",
+    "device": "mps",
+    "threads": 4,
+    "split": "60/20/10/10, stratified, sequential random_state=42,43,44",
+    "selection": "minimum compile KL at step 0,10,20,30,40,50; exactly 50 updates regardless",
+    "inference": "Gate 1 unchanged: one estimator, float32, random_state=2, differentiable input",
+    "feature_constraint": "context-only standardization; clamp context min/max +/-1 standardized unit"
+  },
+  "criterion": {
+    "total": 72,
+    "required_strict_test_kl_wins": 58,
+    "required_positive_dataset_means": 6,
+    "median_delta_strictly_positive": true,
+    "mixed_dataset_count": 5,
+    "failed_general_claim_dataset_count_max": 4
+  },
+  "failures": "No excluded datasets or runs; failed runs remain in denominator and are reported. Incomplete or invalid artifacts cannot support PASS.",
+  "reload_tolerance": 1e-05,
+  "gate1_reuse": "nine stratified Vehicle runs; existing KL reload verification; predictions reconstructed without reoptimization for direct prediction reload verification",
+  "code_sha256": {
+    "benchmarks/runners/tabpfn_compile_experiment.py": "2e7e111441ae0171f6e66ca036a5f8d8899bf6d8ba92e6eea69547699dd2e61c",
+    "benchmarks/runners/verify_tabpfn_compile_artifacts.py": "5dee1f527dc40f2f89c0a8d45e7d47a58211773f419ec6b3ace214a8b6d05d02"
+  }
+}

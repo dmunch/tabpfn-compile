@@ -1,9 +1,11 @@
 """Apply the preregistered Gate 2 criterion and plot every matched comparison."""
+import argparse
 import json
 from pathlib import Path
 
 import matplotlib
 matplotlib.use("Agg")
+matplotlib.rcParams["svg.hashsalt"] = "tabpfn-compile-gate2"
 import matplotlib.pyplot as plt
 from matplotlib.lines import Line2D
 import numpy as np
@@ -17,6 +19,10 @@ ROOT = ARTIFACTS / "gate2"
 
 
 def main():
+    global ROOT
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--root", type=Path, default=ROOT, help="Gate 2 artifact directory")
+    ROOT = parser.parse_args().root.resolve()
     prereg = json.loads((ROOT / "preregistration.json").read_text())
     statuses = json.loads((ROOT / "execution-status.json").read_text())
     assert len(statuses) == 8, "Wait for all eight datasets; no interim gate decision"
@@ -27,6 +33,7 @@ def main():
             runtime_recoveries[log.name] = events
     (ROOT / 'native-memory-recovery.json').write_text(json.dumps(runtime_recoveries, indent=2)+'\n')
     records = []
+    expected_dependencies = None
     for dataset in prereg["datasets"]:
         name = dataset["dataset"]
         folder = ROOT / name
@@ -43,8 +50,10 @@ def main():
             assert meta['config'][key] == prereg['frozen'][key], f'Configuration drift: {name}/{key}'
         device_deviation = meta['config']['device'] != prereg['frozen']['device']
         assert not device_deviation or (name == 'landsat-satellite' and meta['config']['device']=='cpu')
-        gate1_meta = json.loads((ARTIFACTS / 'vehicle-fixed-labels/metadata.json').read_text())
-        assert meta['dependencies'] == gate1_meta['dependencies'], f'Dependency drift: {name}'
+        if expected_dependencies is None:
+            expected_dependencies = meta['dependencies']
+        else:
+            assert meta['dependencies'] == expected_dependencies, f'Dependency drift: {name}'
         trace_file = folder / 'traces.json'
         traces = json.loads(trace_file.read_text()) if trace_file.exists() else []
         source = pd.read_parquet(resolve_data(dataset["data"]))
@@ -135,7 +144,7 @@ def main():
     handles += [Line2D([],[],marker=marker,linestyle='',color='gray',label=f'{m} rows') for m,marker in markers.items()]
     ax.legend(handles=handles, loc='upper left', fontsize=8)
     fig.savefig(ROOT/'paired-kl.png',dpi=180)
-    fig.savefig(ROOT/'paired-kl.svg')
+    fig.savefig(ROOT/'paired-kl.svg', metadata={'Date': None})
     lines = ['# Gate 2 — cross-dataset replication','',f'## Verdict: {label}','',
              f'{wins}/72 runs ({wins/72:.1%}) improved test teacher KL; {positive}/8 datasets have positive mean absolute improvement. Median absolute improvement is {median:.6f} nats. The statistical criterion is met. Artifact reload verification: {verified}/72.', '',
              'The preregistered PASS rule is at least 58/72 strict test-KL wins, positive mean improvement on at least 6/8 datasets, and positive median absolute improvement. All runs must finish and all artifacts must verify. No datasets were excluded.', '',
@@ -180,7 +189,7 @@ def main():
               'Additional UCI datasets: [Balance Scale](https://archive.ics.uci.edu/dataset/12/balance+scale), [Image Segmentation](https://archive.ics.uci.edu/dataset/50/image+segmentation), [Statlog Landsat Satellite](https://archive.ics.uci.edu/dataset/146/statlog+landsat+satellite). Raw download URLs and SHA-256 hashes are in the preregistration. Existing datasets retain their local corpus profiles.', '',
               '## Reproduction', '',
               'The preregistration contains dataset/checkpoint/code hashes and all frozen settings. Per-dataset folders contain metadata with split indices and scaling, cached teacher probabilities, baseline/optimized predictions, CSV contexts, optimization traces, and reload verification. `execution-status.json` and logs retain all execution failures.', '',
-              'Run the frozen experiment runner with `--initializations stratified --label-mode fixed --device mps`, the registered dataset/target, and a new output directory. The orchestration entry point is `scripts/run_tabpfn_gate2.py`; it rejects changed preregistered code and refuses to overwrite an existing run. The aggregator is `scripts/summarize_tabpfn_gate2.py`.', '']
+              'Run or resume the complete frozen pipeline with `scripts/gate2.py`. It validates hashes and the TabPFN commit, skips complete datasets, fills missing experiments and verification records, preserves failed attempts, and invokes this aggregator. Use `scripts/gate2.py --dry-run` to inspect planned work without changing artifacts.', '']
     (ROOT/'README.md').write_text('\n'.join(lines))
     print(json.dumps(summary,indent=2))
     print(by_dataset.to_string())

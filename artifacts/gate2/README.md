@@ -64,4 +64,4 @@ Additional UCI datasets: [Balance Scale](https://archive.ics.uci.edu/dataset/12/
 
 The preregistration contains dataset/checkpoint/code hashes and all frozen settings. Per-dataset folders contain metadata with split indices and scaling, cached teacher probabilities, baseline/optimized predictions, CSV contexts, optimization traces, and reload verification. `execution-status.json` and logs retain all execution failures.
 
-Run the frozen experiment runner with `--initializations stratified --label-mode fixed --device mps`, the registered dataset/target, and a new output directory. The orchestration entry point is `scripts/run_tabpfn_gate2.py`; it rejects changed preregistered code and refuses to overwrite an existing run. The aggregator is `scripts/summarize_tabpfn_gate2.py`.
+Run or resume the complete frozen pipeline with `scripts/gate2.py`. It validates hashes and the TabPFN commit, skips complete datasets, fills missing experiments and verification records, preserves failed attempts, and invokes this aggregator. Use `scripts/gate2.py --dry-run` to inspect planned work without changing artifacts.

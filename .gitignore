@@ -9,3 +9,6 @@ weights/*.safetensors
 # Scratch/reproduction runs; the checked-in Gate 1 and Gate 2 records live
 # directly under artifacts/.
 artifacts/*-reproduction/
+artifacts/gate2/.work/
+artifacts/gate2/pipeline-status.json
+artifacts/gate2/report.log

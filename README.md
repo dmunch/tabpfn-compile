@@ -7,6 +7,7 @@ This repository contains the first fixed-budget feasibility experiment and the p
 ## Layout
 
 - `scripts/`: experiment, orchestration, verification, and reporting code.
+- `config/`: immutable Gate 2 preregistration and repository-migration hashes.
 - `docs/`: mathematical handover and Gate 1/Gate 2 reports.
 - `data/`: the eight numerical classification datasets used in Gate 2.
 - `artifacts/`: complete Gate 1 and Gate 2 outputs, including contexts, cached predictions, traces, logs, figures, and decision records.
@@ -35,6 +36,19 @@ PYTHONPATH=../TabPFN/src MPLCONFIGDIR=/tmp/tabpfn-compile-mpl \
   --output artifacts/vehicle-reproduction \
   --device mps --label-mode fixed --initializations stratified
 ```
+
+Run or resume the complete Gate 2 pipeline:
+
+```bash
+PYTHONPATH=../TabPFN/src .venv/bin/python scripts/gate2.py
+```
+
+The driver validates the frozen inputs, skips complete experiments, fills missing
+experiments and verification records, applies the registered Landsat CPU fallback
+after an MPS out-of-memory failure, and regenerates the aggregate report. Inspect
+the planned work without changing files with `scripts/gate2.py --dry-run`. Existing
+incomplete artifacts are never overwritten; use `--force --dataset NAME` to preserve
+one under `artifacts/gate2/superseded/` and rerun it.
 
 The scripts accept historical artifact metadata containing the original nanotabicl paths and resolve it against this repository by filename.
 
