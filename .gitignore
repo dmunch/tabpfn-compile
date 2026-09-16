@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+
+# The supplied checkpoint is kept locally but is too large for ordinary Git.
+weights/*.safetensors
+
+# Scratch/reproduction runs; the checked-in Gate 1 and Gate 2 records live
+# directly under artifacts/.
+artifacts/*-reproduction/

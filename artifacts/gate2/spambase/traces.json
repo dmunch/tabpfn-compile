@@ -1,0 +1,317 @@
+[
+  {
+    "rows": 8,
+    "seed": 42,
+    "initialization": "stratified",
+    "step": 10,
+    "compile_kl": 0.30461829900741577
+  },
+  {
+    "rows": 8,
+    "seed": 42,
+    "initialization": "stratified",
+    "step": 20,
+    "compile_kl": 0.25927960872650146
+  },
+  {
+    "rows": 8,
+    "seed": 42,
+    "initialization": "stratified",
+    "step": 30,
+    "compile_kl": 0.22596392035484314
+  },
+  {
+    "rows": 8,
+    "seed": 42,
+    "initialization": "stratified",
+    "step": 40,
+    "compile_kl": 0.21720337867736816
+  },
+  {
+    "rows": 8,
+    "seed": 42,
+    "initialization": "stratified",
+    "step": 50,
+    "compile_kl": 0.20082132518291473
+  },
+  {
+    "rows": 8,
+    "seed": 43,
+    "initialization": "stratified",
+    "step": 10,
+    "compile_kl": 0.2956078052520752
+  },
+  {
+    "rows": 8,
+    "seed": 43,
+    "initialization": "stratified",
+    "step": 20,
+    "compile_kl": 0.23687823116779327
+  },
+  {
+    "rows": 8,
+    "seed": 43,
+    "initialization": "stratified",
+    "step": 30,
+    "compile_kl": 0.1864623725414276
+  },
+  {
+    "rows": 8,
+    "seed": 43,
+    "initialization": "stratified",
+    "step": 40,
+    "compile_kl": 0.18257758021354675
+  },
+  {
+    "rows": 8,
+    "seed": 43,
+    "initialization": "stratified",
+    "step": 50,
+    "compile_kl": 0.17573875188827515
+  },
+  {
+    "rows": 8,
+    "seed": 44,
+    "initialization": "stratified",
+    "step": 10,
+    "compile_kl": 0.3382705748081207
+  },
+  {
+    "rows": 8,
+    "seed": 44,
+    "initialization": "stratified",
+    "step": 20,
+    "compile_kl": 0.2529352903366089
+  },
+  {
+    "rows": 8,
+    "seed": 44,
+    "initialization": "stratified",
+    "step": 30,
+    "compile_kl": 0.25873857736587524
+  },
+  {
+    "rows": 8,
+    "seed": 44,
+    "initialization": "stratified",
+    "step": 40,
+    "compile_kl": 0.23155532777309418
+  },
+  {
+    "rows": 8,
+    "seed": 44,
+    "initialization": "stratified",
+    "step": 50,
+    "compile_kl": 0.22118031978607178
+  },
+  {
+    "rows": 32,
+    "seed": 42,
+    "initialization": "stratified",
+    "step": 10,
+    "compile_kl": 0.16939160227775574
+  },
+  {
+    "rows": 32,
+    "seed": 42,
+    "initialization": "stratified",
+    "step": 20,
+    "compile_kl": 0.1420964002609253
+  },
+  {
+    "rows": 32,
+    "seed": 42,
+    "initialization": "stratified",
+    "step": 30,
+    "compile_kl": 0.12874814867973328
+  },
+  {
+    "rows": 32,
+    "seed": 42,
+    "initialization": "stratified",
+    "step": 40,
+    "compile_kl": 0.1108194962143898
+  },
+  {
+    "rows": 32,
+    "seed": 42,
+    "initialization": "stratified",
+    "step": 50,
+    "compile_kl": 0.113094262778759
+  },
+  {
+    "rows": 32,
+    "seed": 43,
+    "initialization": "stratified",
+    "step": 10,
+    "compile_kl": 0.13180316984653473
+  },
+  {
+    "rows": 32,
+    "seed": 43,
+    "initialization": "stratified",
+    "step": 20,
+    "compile_kl": 0.11219081282615662
+  },
+  {
+    "rows": 32,
+    "seed": 43,
+    "initialization": "stratified",
+    "step": 30,
+    "compile_kl": 0.10540049523115158
+  },
+  {
+    "rows": 32,
+    "seed": 43,
+    "initialization": "stratified",
+    "step": 40,
+    "compile_kl": 0.09277375787496567
+  },
+  {
+    "rows": 32,
+    "seed": 43,
+    "initialization": "stratified",
+    "step": 50,
+    "compile_kl": 0.08498191833496094
+  },
+  {
+    "rows": 32,
+    "seed": 44,
+    "initialization": "stratified",
+    "step": 10,
+    "compile_kl": 0.14261338114738464
+  },
+  {
+    "rows": 32,
+    "seed": 44,
+    "initialization": "stratified",
+    "step": 20,
+    "compile_kl": 0.12260691076517105
+  },
+  {
+    "rows": 32,
+    "seed": 44,
+    "initialization": "stratified",
+    "step": 30,
+    "compile_kl": 0.12225721776485443
+  },
+  {
+    "rows": 32,
+    "seed": 44,
+    "initialization": "stratified",
+    "step": 40,
+    "compile_kl": 0.10064462572336197
+  },
+  {
+    "rows": 32,
+    "seed": 44,
+    "initialization": "stratified",
+    "step": 50,
+    "compile_kl": 0.10413053631782532
+  },
+  {
+    "rows": 128,
+    "seed": 42,
+    "initialization": "stratified",
+    "step": 10,
+    "compile_kl": 0.12105848640203476
+  },
+  {
+    "rows": 128,
+    "seed": 42,
+    "initialization": "stratified",
+    "step": 20,
+    "compile_kl": 0.09930592775344849
+  },
+  {
+    "rows": 128,
+    "seed": 42,
+    "initialization": "stratified",
+    "step": 30,
+    "compile_kl": 0.08056045323610306
+  },
+  {
+    "rows": 128,
+    "seed": 42,
+    "initialization": "stratified",
+    "step": 40,
+    "compile_kl": 0.07175309211015701
+  },
+  {
+    "rows": 128,
+    "seed": 42,
+    "initialization": "stratified",
+    "step": 50,
+    "compile_kl": 0.06726676970720291
+  },
+  {
+    "rows": 128,
+    "seed": 43,
+    "initialization": "stratified",
+    "step": 10,
+    "compile_kl": 0.10715482383966446
+  },
+  {
+    "rows": 128,
+    "seed": 43,
+    "initialization": "stratified",
+    "step": 20,
+    "compile_kl": 0.09343144297599792
+  },
+  {
+    "rows": 128,
+    "seed": 43,
+    "initialization": "stratified",
+    "step": 30,
+    "compile_kl": 0.07516531646251678
+  },
+  {
+    "rows": 128,
+    "seed": 43,
+    "initialization": "stratified",
+    "step": 40,
+    "compile_kl": 0.0683368593454361
+  },
+  {
+    "rows": 128,
+    "seed": 43,
+    "initialization": "stratified",
+    "step": 50,
+    "compile_kl": 0.06365077197551727
+  },
+  {
+    "rows": 128,
+    "seed": 44,
+    "initialization": "stratified",
+    "step": 10,
+    "compile_kl": 0.08963389694690704
+  },
+  {
+    "rows": 128,
+    "seed": 44,
+    "initialization": "stratified",
+    "step": 20,
+    "compile_kl": 0.08088110387325287
+  },
+  {
+    "rows": 128,
+    "seed": 44,
+    "initialization": "stratified",
+    "step": 30,
+    "compile_kl": 0.06658782064914703
+  },
+  {
+    "rows": 128,
+    "seed": 44,
+    "initialization": "stratified",
+    "step": 40,
+    "compile_kl": 0.05981571227312088
+  },
+  {
+    "rows": 128,
+    "seed": 44,
+    "initialization": "stratified",
+    "step": 50,
+    "compile_kl": 0.05691572651267052
+  }
+]

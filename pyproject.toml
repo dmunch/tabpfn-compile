@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tabpfn-compile"
+version = "0.1.0"
+description = "Compile labelled numerical datasets into small TabPFN in-context datasets"
+requires-python = ">=3.10"
+dependencies = [
+  "matplotlib>=3.6",
+  "numpy>=1.21.6",
+  "pandas>=1.4",
+  "pyarrow>=15",
+  "scikit-learn>=1.2",
+  "torch>=2.5",
+]
+
+[tool.setuptools]
+packages = []

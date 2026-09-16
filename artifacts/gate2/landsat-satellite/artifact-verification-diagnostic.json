@@ -1,0 +1,119 @@
+[
+  {
+    "file": "compiled-8-42-stratified.csv",
+    "kl_absolute_errors": {
+      "compile": 0.000614851713180542,
+      "validation": 0.0004946887493133545,
+      "test": 0.004997551441192627
+    },
+    "prediction_max_absolute_errors": {
+      "compile": 0.16772907972335815,
+      "validation": 0.1191759705543518,
+      "test": 0.13041090965270996
+    }
+  },
+  {
+    "file": "compiled-8-43-stratified.csv",
+    "kl_absolute_errors": {
+      "compile": 0.012854933738708496,
+      "validation": 0.010793715715408325,
+      "test": 0.011976659297943115
+    },
+    "prediction_max_absolute_errors": {
+      "compile": 0.25986215472221375,
+      "validation": 0.24532565474510193,
+      "test": 0.25098535418510437
+    }
+  },
+  {
+    "file": "compiled-8-44-stratified.csv",
+    "kl_absolute_errors": {
+      "compile": 0.006922662258148193,
+      "validation": 0.008397400379180908,
+      "test": 0.005582869052886963
+    },
+    "prediction_max_absolute_errors": {
+      "compile": 0.14570772647857666,
+      "validation": 0.13842523097991943,
+      "test": 0.1338719129562378
+    }
+  },
+  {
+    "file": "compiled-32-42-stratified.csv",
+    "kl_absolute_errors": {
+      "compile": 0.00111350417137146,
+      "validation": 0.0019042342901229858,
+      "test": 0.0032816082239151
+    },
+    "prediction_max_absolute_errors": {
+      "compile": 0.1266878843307495,
+      "validation": 0.09962478280067444,
+      "test": 0.2162328064441681
+    }
+  },
+  {
+    "file": "compiled-32-43-stratified.csv",
+    "kl_absolute_errors": {
+      "compile": 1.4901161193847656e-08,
+      "validation": 0.000547066330909729,
+      "test": 0.0005200803279876709
+    },
+    "prediction_max_absolute_errors": {
+      "compile": 0.04529547691345215,
+      "validation": 0.059240102767944336,
+      "test": 0.059567391872406006
+    }
+  },
+  {
+    "file": "compiled-32-44-stratified.csv",
+    "kl_absolute_errors": {
+      "compile": 0.0007068812847137451,
+      "validation": 0.0010138601064682007,
+      "test": 0.00026570260524749756
+    },
+    "prediction_max_absolute_errors": {
+      "compile": 0.0970335304737091,
+      "validation": 0.09687048196792603,
+      "test": 0.07402408123016357
+    }
+  },
+  {
+    "file": "compiled-128-42-stratified.csv",
+    "kl_absolute_errors": {
+      "compile": 0.00019656121730804443,
+      "validation": 0.0013131052255630493,
+      "test": 0.000821426510810852
+    },
+    "prediction_max_absolute_errors": {
+      "compile": 0.057440370321273804,
+      "validation": 0.06943690776824951,
+      "test": 0.04748326539993286
+    }
+  },
+  {
+    "file": "compiled-128-43-stratified.csv",
+    "kl_absolute_errors": {
+      "compile": 0.000818200409412384,
+      "validation": 1.2882053852081299e-05,
+      "test": 0.0003520771861076355
+    },
+    "prediction_max_absolute_errors": {
+      "compile": 0.10258996486663818,
+      "validation": 0.06779640913009644,
+      "test": 0.10156813263893127
+    }
+  },
+  {
+    "file": "compiled-128-44-stratified.csv",
+    "kl_absolute_errors": {
+      "compile": 0.0014392808079719543,
+      "validation": 0.0031076520681381226,
+      "test": 0.0016158372163772583
+    },
+    "prediction_max_absolute_errors": {
+      "compile": 0.0832119882106781,
+      "validation": 0.06062537431716919,
+      "test": 0.05869632959365845
+    }
+  }
+]

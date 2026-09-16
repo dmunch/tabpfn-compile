@@ -1,0 +1,83 @@
+[
+  {
+    "file": "compiled-8-42-stratified.csv",
+    "kl_absolute_errors": {
+      "compile": 1.7881393432617188e-07,
+      "validation": 1.1920928955078125e-07,
+      "test": 0.0
+    },
+    "prediction_max_absolute_errors": {}
+  },
+  {
+    "file": "compiled-8-43-stratified.csv",
+    "kl_absolute_errors": {
+      "compile": 4.172325134277344e-07,
+      "validation": 4.172325134277344e-07,
+      "test": 2.384185791015625e-07
+    },
+    "prediction_max_absolute_errors": {}
+  },
+  {
+    "file": "compiled-8-44-stratified.csv",
+    "kl_absolute_errors": {
+      "compile": 0.0,
+      "validation": 1.1920928955078125e-07,
+      "test": 1.1920928955078125e-07
+    },
+    "prediction_max_absolute_errors": {}
+  },
+  {
+    "file": "compiled-32-42-stratified.csv",
+    "kl_absolute_errors": {
+      "compile": 3.501772880554199e-07,
+      "validation": 2.384185791015625e-07,
+      "test": 1.1920928955078125e-07
+    },
+    "prediction_max_absolute_errors": {}
+  },
+  {
+    "file": "compiled-32-43-stratified.csv",
+    "kl_absolute_errors": {
+      "compile": 1.043081283569336e-07,
+      "validation": 5.364418029785156e-07,
+      "test": 5.513429641723633e-07
+    },
+    "prediction_max_absolute_errors": {}
+  },
+  {
+    "file": "compiled-32-44-stratified.csv",
+    "kl_absolute_errors": {
+      "compile": 1.8998980522155762e-07,
+      "validation": 2.086162567138672e-07,
+      "test": 1.043081283569336e-07
+    },
+    "prediction_max_absolute_errors": {}
+  },
+  {
+    "file": "compiled-128-42-stratified.csv",
+    "kl_absolute_errors": {
+      "compile": 3.259629011154175e-08,
+      "validation": 2.3096799850463867e-07,
+      "test": 2.60770320892334e-07
+    },
+    "prediction_max_absolute_errors": {}
+  },
+  {
+    "file": "compiled-128-43-stratified.csv",
+    "kl_absolute_errors": {
+      "compile": 2.0954757928848267e-08,
+      "validation": 5.401670932769775e-07,
+      "test": 2.905726432800293e-07
+    },
+    "prediction_max_absolute_errors": {}
+  },
+  {
+    "file": "compiled-128-44-stratified.csv",
+    "kl_absolute_errors": {
+      "compile": 0.0,
+      "validation": 2.5331974029541016e-07,
+      "test": 1.5273690223693848e-07
+    },
+    "prediction_max_absolute_errors": {}
+  }
+]

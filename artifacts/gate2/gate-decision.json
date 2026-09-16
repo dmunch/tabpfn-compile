@@ -1,0 +1,17 @@
+{
+  "verdict": "CRITERION MET; ARTIFACT VERIFICATION FAILURE",
+  "statistical_criterion_met": true,
+  "total_runs": 72,
+  "completed_runs": 72,
+  "wins": 72,
+  "win_fraction": 1.0,
+  "positive_mean_datasets": 8,
+  "median_delta_kl": 0.08121588081121445,
+  "verified_artifacts": 63,
+  "maximum_prediction_reload_error": 0.25986215472221375,
+  "new_runs_only": {
+    "total": 63,
+    "wins": 63,
+    "positive_mean_datasets": 7
+  }
+}

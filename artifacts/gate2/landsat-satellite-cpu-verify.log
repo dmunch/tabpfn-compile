@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/danielmunch/Projects/nanotabicl/benchmarks/runners/verify_tabpfn_compile_artifacts.py", line 73, in <module>
+    main()
+    ~~~~^^
+  File "/Users/danielmunch/Projects/nanotabicl/benchmarks/runners/verify_tabpfn_compile_artifacts.py", line 56, in main
+    assert delta < 1e-5, (str(file), split, value, result[split]["kl"])
+           ^^^^^^^^^^^^
+AssertionError: ('benchmarks/results/tabpfn-compile/gate2/landsat-satellite/compiled-8-42-stratified.csv', 'compile', 0.38480034470558167, 0.3841854929924011)

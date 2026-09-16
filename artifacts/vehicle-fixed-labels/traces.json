@@ -1,0 +1,632 @@
+[
+  {
+    "rows": 8,
+    "seed": 42,
+    "initialization": "random",
+    "step": 10,
+    "compile_kl": 1.023877501487732
+  },
+  {
+    "rows": 8,
+    "seed": 42,
+    "initialization": "random",
+    "step": 20,
+    "compile_kl": 0.9896960854530334
+  },
+  {
+    "rows": 8,
+    "seed": 42,
+    "initialization": "random",
+    "step": 30,
+    "compile_kl": 0.926828145980835
+  },
+  {
+    "rows": 8,
+    "seed": 42,
+    "initialization": "random",
+    "step": 40,
+    "compile_kl": 0.8262285590171814
+  },
+  {
+    "rows": 8,
+    "seed": 42,
+    "initialization": "random",
+    "step": 50,
+    "compile_kl": 0.6987426280975342
+  },
+  {
+    "rows": 8,
+    "seed": 42,
+    "initialization": "stratified",
+    "step": 10,
+    "compile_kl": 0.9781123995780945
+  },
+  {
+    "rows": 8,
+    "seed": 42,
+    "initialization": "stratified",
+    "step": 20,
+    "compile_kl": 0.9337130188941956
+  },
+  {
+    "rows": 8,
+    "seed": 42,
+    "initialization": "stratified",
+    "step": 30,
+    "compile_kl": 0.9128602147102356
+  },
+  {
+    "rows": 8,
+    "seed": 42,
+    "initialization": "stratified",
+    "step": 40,
+    "compile_kl": 0.8631477952003479
+  },
+  {
+    "rows": 8,
+    "seed": 42,
+    "initialization": "stratified",
+    "step": 50,
+    "compile_kl": 0.841802716255188
+  },
+  {
+    "rows": 8,
+    "seed": 43,
+    "initialization": "random",
+    "step": 10,
+    "compile_kl": 3.4377498626708984
+  },
+  {
+    "rows": 8,
+    "seed": 43,
+    "initialization": "random",
+    "step": 20,
+    "compile_kl": 3.3907132148742676
+  },
+  {
+    "rows": 8,
+    "seed": 43,
+    "initialization": "random",
+    "step": 30,
+    "compile_kl": 3.3783111572265625
+  },
+  {
+    "rows": 8,
+    "seed": 43,
+    "initialization": "random",
+    "step": 40,
+    "compile_kl": 3.3395371437072754
+  },
+  {
+    "rows": 8,
+    "seed": 43,
+    "initialization": "random",
+    "step": 50,
+    "compile_kl": 3.3157103061676025
+  },
+  {
+    "rows": 8,
+    "seed": 43,
+    "initialization": "stratified",
+    "step": 10,
+    "compile_kl": 1.035416841506958
+  },
+  {
+    "rows": 8,
+    "seed": 43,
+    "initialization": "stratified",
+    "step": 20,
+    "compile_kl": 1.009619116783142
+  },
+  {
+    "rows": 8,
+    "seed": 43,
+    "initialization": "stratified",
+    "step": 30,
+    "compile_kl": 0.9772272109985352
+  },
+  {
+    "rows": 8,
+    "seed": 43,
+    "initialization": "stratified",
+    "step": 40,
+    "compile_kl": 0.9153826236724854
+  },
+  {
+    "rows": 8,
+    "seed": 43,
+    "initialization": "stratified",
+    "step": 50,
+    "compile_kl": 0.8847867250442505
+  },
+  {
+    "rows": 8,
+    "seed": 44,
+    "initialization": "random",
+    "step": 10,
+    "compile_kl": 2.6198794841766357
+  },
+  {
+    "rows": 8,
+    "seed": 44,
+    "initialization": "random",
+    "step": 20,
+    "compile_kl": 2.516606569290161
+  },
+  {
+    "rows": 8,
+    "seed": 44,
+    "initialization": "random",
+    "step": 30,
+    "compile_kl": 2.419943332672119
+  },
+  {
+    "rows": 8,
+    "seed": 44,
+    "initialization": "random",
+    "step": 40,
+    "compile_kl": 2.3673558235168457
+  },
+  {
+    "rows": 8,
+    "seed": 44,
+    "initialization": "random",
+    "step": 50,
+    "compile_kl": 2.3622303009033203
+  },
+  {
+    "rows": 8,
+    "seed": 44,
+    "initialization": "stratified",
+    "step": 10,
+    "compile_kl": 1.071060299873352
+  },
+  {
+    "rows": 8,
+    "seed": 44,
+    "initialization": "stratified",
+    "step": 20,
+    "compile_kl": 1.0475038290023804
+  },
+  {
+    "rows": 8,
+    "seed": 44,
+    "initialization": "stratified",
+    "step": 30,
+    "compile_kl": 1.037686824798584
+  },
+  {
+    "rows": 8,
+    "seed": 44,
+    "initialization": "stratified",
+    "step": 40,
+    "compile_kl": 1.0315788984298706
+  },
+  {
+    "rows": 8,
+    "seed": 44,
+    "initialization": "stratified",
+    "step": 50,
+    "compile_kl": 1.0026540756225586
+  },
+  {
+    "rows": 32,
+    "seed": 42,
+    "initialization": "random",
+    "step": 10,
+    "compile_kl": 0.14722923934459686
+  },
+  {
+    "rows": 32,
+    "seed": 42,
+    "initialization": "random",
+    "step": 20,
+    "compile_kl": 0.1164197102189064
+  },
+  {
+    "rows": 32,
+    "seed": 42,
+    "initialization": "random",
+    "step": 30,
+    "compile_kl": 0.11076078563928604
+  },
+  {
+    "rows": 32,
+    "seed": 42,
+    "initialization": "random",
+    "step": 40,
+    "compile_kl": 0.09226623177528381
+  },
+  {
+    "rows": 32,
+    "seed": 42,
+    "initialization": "random",
+    "step": 50,
+    "compile_kl": 0.08392416685819626
+  },
+  {
+    "rows": 32,
+    "seed": 42,
+    "initialization": "stratified",
+    "step": 10,
+    "compile_kl": 0.19148290157318115
+  },
+  {
+    "rows": 32,
+    "seed": 42,
+    "initialization": "stratified",
+    "step": 20,
+    "compile_kl": 0.1126771867275238
+  },
+  {
+    "rows": 32,
+    "seed": 42,
+    "initialization": "stratified",
+    "step": 30,
+    "compile_kl": 0.09097207337617874
+  },
+  {
+    "rows": 32,
+    "seed": 42,
+    "initialization": "stratified",
+    "step": 40,
+    "compile_kl": 0.07683706283569336
+  },
+  {
+    "rows": 32,
+    "seed": 42,
+    "initialization": "stratified",
+    "step": 50,
+    "compile_kl": 0.08675069361925125
+  },
+  {
+    "rows": 32,
+    "seed": 43,
+    "initialization": "random",
+    "step": 10,
+    "compile_kl": 0.21854938566684723
+  },
+  {
+    "rows": 32,
+    "seed": 43,
+    "initialization": "random",
+    "step": 20,
+    "compile_kl": 0.1344638615846634
+  },
+  {
+    "rows": 32,
+    "seed": 43,
+    "initialization": "random",
+    "step": 30,
+    "compile_kl": 0.10557689517736435
+  },
+  {
+    "rows": 32,
+    "seed": 43,
+    "initialization": "random",
+    "step": 40,
+    "compile_kl": 0.09534908086061478
+  },
+  {
+    "rows": 32,
+    "seed": 43,
+    "initialization": "random",
+    "step": 50,
+    "compile_kl": 0.08462744951248169
+  },
+  {
+    "rows": 32,
+    "seed": 43,
+    "initialization": "stratified",
+    "step": 10,
+    "compile_kl": 0.17570093274116516
+  },
+  {
+    "rows": 32,
+    "seed": 43,
+    "initialization": "stratified",
+    "step": 20,
+    "compile_kl": 0.10781741887331009
+  },
+  {
+    "rows": 32,
+    "seed": 43,
+    "initialization": "stratified",
+    "step": 30,
+    "compile_kl": 0.08719366043806076
+  },
+  {
+    "rows": 32,
+    "seed": 43,
+    "initialization": "stratified",
+    "step": 40,
+    "compile_kl": 0.07594446837902069
+  },
+  {
+    "rows": 32,
+    "seed": 43,
+    "initialization": "stratified",
+    "step": 50,
+    "compile_kl": 0.08682215213775635
+  },
+  {
+    "rows": 32,
+    "seed": 44,
+    "initialization": "random",
+    "step": 10,
+    "compile_kl": 0.22633764147758484
+  },
+  {
+    "rows": 32,
+    "seed": 44,
+    "initialization": "random",
+    "step": 20,
+    "compile_kl": 0.18692967295646667
+  },
+  {
+    "rows": 32,
+    "seed": 44,
+    "initialization": "random",
+    "step": 30,
+    "compile_kl": 0.14018861949443817
+  },
+  {
+    "rows": 32,
+    "seed": 44,
+    "initialization": "random",
+    "step": 40,
+    "compile_kl": 0.11895480751991272
+  },
+  {
+    "rows": 32,
+    "seed": 44,
+    "initialization": "random",
+    "step": 50,
+    "compile_kl": 0.09857548028230667
+  },
+  {
+    "rows": 32,
+    "seed": 44,
+    "initialization": "stratified",
+    "step": 10,
+    "compile_kl": 0.22402054071426392
+  },
+  {
+    "rows": 32,
+    "seed": 44,
+    "initialization": "stratified",
+    "step": 20,
+    "compile_kl": 0.0893920436501503
+  },
+  {
+    "rows": 32,
+    "seed": 44,
+    "initialization": "stratified",
+    "step": 30,
+    "compile_kl": 0.0677436962723732
+  },
+  {
+    "rows": 32,
+    "seed": 44,
+    "initialization": "stratified",
+    "step": 40,
+    "compile_kl": 0.06114386394619942
+  },
+  {
+    "rows": 32,
+    "seed": 44,
+    "initialization": "stratified",
+    "step": 50,
+    "compile_kl": 0.04646803438663483
+  },
+  {
+    "rows": 128,
+    "seed": 42,
+    "initialization": "random",
+    "step": 10,
+    "compile_kl": 0.03228064998984337
+  },
+  {
+    "rows": 128,
+    "seed": 42,
+    "initialization": "random",
+    "step": 20,
+    "compile_kl": 0.015540489926934242
+  },
+  {
+    "rows": 128,
+    "seed": 42,
+    "initialization": "random",
+    "step": 30,
+    "compile_kl": 0.010582119226455688
+  },
+  {
+    "rows": 128,
+    "seed": 42,
+    "initialization": "random",
+    "step": 40,
+    "compile_kl": 0.005703326780349016
+  },
+  {
+    "rows": 128,
+    "seed": 42,
+    "initialization": "random",
+    "step": 50,
+    "compile_kl": 0.008279104717075825
+  },
+  {
+    "rows": 128,
+    "seed": 42,
+    "initialization": "stratified",
+    "step": 10,
+    "compile_kl": 0.033126045018434525
+  },
+  {
+    "rows": 128,
+    "seed": 42,
+    "initialization": "stratified",
+    "step": 20,
+    "compile_kl": 0.015537207014858723
+  },
+  {
+    "rows": 128,
+    "seed": 42,
+    "initialization": "stratified",
+    "step": 30,
+    "compile_kl": 0.013068568892776966
+  },
+  {
+    "rows": 128,
+    "seed": 42,
+    "initialization": "stratified",
+    "step": 40,
+    "compile_kl": 0.009735077619552612
+  },
+  {
+    "rows": 128,
+    "seed": 42,
+    "initialization": "stratified",
+    "step": 50,
+    "compile_kl": 0.007896319963037968
+  },
+  {
+    "rows": 128,
+    "seed": 43,
+    "initialization": "random",
+    "step": 10,
+    "compile_kl": 0.019738033413887024
+  },
+  {
+    "rows": 128,
+    "seed": 43,
+    "initialization": "random",
+    "step": 20,
+    "compile_kl": 0.014893874526023865
+  },
+  {
+    "rows": 128,
+    "seed": 43,
+    "initialization": "random",
+    "step": 30,
+    "compile_kl": 0.010276349261403084
+  },
+  {
+    "rows": 128,
+    "seed": 43,
+    "initialization": "random",
+    "step": 40,
+    "compile_kl": 0.006549117621034384
+  },
+  {
+    "rows": 128,
+    "seed": 43,
+    "initialization": "random",
+    "step": 50,
+    "compile_kl": 0.005625877529382706
+  },
+  {
+    "rows": 128,
+    "seed": 43,
+    "initialization": "stratified",
+    "step": 10,
+    "compile_kl": 0.03047105111181736
+  },
+  {
+    "rows": 128,
+    "seed": 43,
+    "initialization": "stratified",
+    "step": 20,
+    "compile_kl": 0.01560528576374054
+  },
+  {
+    "rows": 128,
+    "seed": 43,
+    "initialization": "stratified",
+    "step": 30,
+    "compile_kl": 0.009760466404259205
+  },
+  {
+    "rows": 128,
+    "seed": 43,
+    "initialization": "stratified",
+    "step": 40,
+    "compile_kl": 0.0068290685303509235
+  },
+  {
+    "rows": 128,
+    "seed": 43,
+    "initialization": "stratified",
+    "step": 50,
+    "compile_kl": 0.007565103936940432
+  },
+  {
+    "rows": 128,
+    "seed": 44,
+    "initialization": "random",
+    "step": 10,
+    "compile_kl": 0.031960729509592056
+  },
+  {
+    "rows": 128,
+    "seed": 44,
+    "initialization": "random",
+    "step": 20,
+    "compile_kl": 0.01752173714339733
+  },
+  {
+    "rows": 128,
+    "seed": 44,
+    "initialization": "random",
+    "step": 30,
+    "compile_kl": 0.011697753332555294
+  },
+  {
+    "rows": 128,
+    "seed": 44,
+    "initialization": "random",
+    "step": 40,
+    "compile_kl": 0.007869772613048553
+  },
+  {
+    "rows": 128,
+    "seed": 44,
+    "initialization": "random",
+    "step": 50,
+    "compile_kl": 0.007332182489335537
+  },
+  {
+    "rows": 128,
+    "seed": 44,
+    "initialization": "stratified",
+    "step": 10,
+    "compile_kl": 0.04079678654670715
+  },
+  {
+    "rows": 128,
+    "seed": 44,
+    "initialization": "stratified",
+    "step": 20,
+    "compile_kl": 0.022895529866218567
+  },
+  {
+    "rows": 128,
+    "seed": 44,
+    "initialization": "stratified",
+    "step": 30,
+    "compile_kl": 0.012431226670742035
+  },
+  {
+    "rows": 128,
+    "seed": 44,
+    "initialization": "stratified",
+    "step": 40,
+    "compile_kl": 0.011011303402483463
+  },
+  {
+    "rows": 128,
+    "seed": 44,
+    "initialization": "stratified",
+    "step": 50,
+    "compile_kl": 0.0072176153771579266
+  }
+]

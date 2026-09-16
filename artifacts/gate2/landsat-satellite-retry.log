@@ -1,0 +1,107 @@
+Split sizes: {'context': 3861, 'compile': 1287, 'validation': 643, 'test': 644}
+Traceback (most recent call last):
+  File "/Users/danielmunch/Projects/nanotabicl/benchmarks/runners/tabpfn_compile_experiment.py", line 235, in <module>
+    main()
+    ~~~~^^
+  File "/Users/danielmunch/Projects/nanotabicl/benchmarks/runners/tabpfn_compile_experiment.py", line 137, in main
+    teacher[name] = predict(X[context], Y[context], X[ids[name]])
+                    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/danielmunch/Projects/nanotabicl/benchmarks/runners/tabpfn_compile_experiment.py", line 130, in predict
+    return torch.cat([clf.forward(b, use_inference_mode=True).detach().cpu()
+                      ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/danielmunch/Projects/tabpfn/src/tabpfn/classifier.py", line 1876, in forward
+    for output, config in tqdm(
+                          ~~~~^
+        self.executor_.iter_outputs(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+        disable=not self.show_progress_bar,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ):
+    ^
+  File "/Users/danielmunch/Projects/nanotabicl/.venv/lib/python3.14/site-packages/tqdm/std.py", line 1175, in __iter__
+    for obj in iterable:
+               ^^^^^^^^
+  File "/Users/danielmunch/Projects/tabpfn/src/tabpfn/inference.py", line 753, in iter_outputs
+    for output, ensemble_member in zip(
+                                   ~~~^
+        timed_outputs, self.ensemble_members, strict=True
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ):
+    ^
+  File "/Users/danielmunch/Projects/tabpfn/src/tabpfn/inference.py", line 71, in __next__
+    value = next(self._inner)
+  File "/Users/danielmunch/Projects/tabpfn/src/tabpfn/parallel_execute.py", line 86, in parallel_execute
+    yield from _execute_in_current_thread(devices[0], functions)
+  File "/Users/danielmunch/Projects/tabpfn/src/tabpfn/parallel_execute.py", line 97, in _execute_in_current_thread
+    yield function(device=device)
+          ~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/danielmunch/Projects/tabpfn/src/tabpfn/inference.py", line 812, in _call_model
+    return model(
+        X_full,
+    ...<4 lines>...
+        **kwargs,
+    )
+  File "/Users/danielmunch/Projects/nanotabicl/.venv/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/danielmunch/Projects/nanotabicl/.venv/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/danielmunch/Projects/tabpfn/src/tabpfn/architectures/tabpfn_v3_5.py", line 2355, in forward
+    x_BRiD, _ = block(
+                ~~~~~^
+        x_BRiD,
+        ^^^^^^^
+        num_train,
+        ^^^^^^^^^^
+        performance_options.save_peak_memory_factor,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/danielmunch/Projects/nanotabicl/.venv/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/danielmunch/Projects/nanotabicl/.venv/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/danielmunch/Projects/tabpfn/src/tabpfn/architectures/tabpfn_v3_5.py", line 1596, in forward
+    x_BRE = chunked_evaluate_maybe_inplace(
+        _attn_fn,
+    ...<4 lines>...
+        single_eval_pos=single_eval_pos,
+    )
+  File "/Users/danielmunch/Projects/tabpfn/src/tabpfn/architectures/shared/chunked_evaluate.py", line 49, in chunked_evaluate_maybe_inplace
+    result = f(x.flatten(0, batch_dims - 1), *args, **kwargs).view(x.shape)
+             ~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/danielmunch/Projects/tabpfn/src/tabpfn/architectures/tabpfn_v3_5.py", line 1590, in _attn_fn
+    out, _ = self.icl_attention(
+             ~~~~~~~~~~~~~~~~~~^
+        self.layernorm(x),
+        ^^^^^^^^^^^^^^^^^^
+        single_eval_pos=single_eval_pos,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/danielmunch/Projects/nanotabicl/.venv/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/danielmunch/Projects/nanotabicl/.venv/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/danielmunch/Projects/tabpfn/src/tabpfn/architectures/tabpfn_v3_5.py", line 1314, in forward
+    out_test = _batched_scaled_dot_product_attention(
+        q[:, N:],
+    ...<2 lines>...
+        softmax_scaling_layer=self.softmax_scaling_layer,
+    )
+  File "/Users/danielmunch/Projects/tabpfn/src/tabpfn/architectures/tabpfn_v3_5.py", line 1040, in _batched_scaled_dot_product_attention
+    q_BSHD = softmax_scaling_layer(q_BSHD, src_len)
+  File "/Users/danielmunch/Projects/nanotabicl/.venv/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/danielmunch/Projects/nanotabicl/.venv/lib/python3.14/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/danielmunch/Projects/tabpfn/src/tabpfn/architectures/tabpfn_v3_5.py", line 1002, in forward
+    logn_11 = _safe_log_seqlen(n, q_BSHD.device, q_BSHD.dtype).reshape(1, 1)
+              ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/danielmunch/Projects/tabpfn/src/tabpfn/architectures/tabpfn_v3_5.py", line 3291, in _safe_log_seqlen
+    one = torch.ones((), dtype=torch.float32, device=device)
+RuntimeError: MPS backend out of memory (MPS allocated: 1.88 GiB, other allocations: 6.91 GiB, max allowed: 8.29 GiB). Tried to allocate 256 bytes on shared pool. Use PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0 to disable upper limit for memory allocations (may cause system failure).

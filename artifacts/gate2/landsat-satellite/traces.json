@@ -1,0 +1,317 @@
+[
+  {
+    "rows": 8,
+    "seed": 42,
+    "initialization": "stratified",
+    "step": 10,
+    "compile_kl": 0.6469978094100952
+  },
+  {
+    "rows": 8,
+    "seed": 42,
+    "initialization": "stratified",
+    "step": 20,
+    "compile_kl": 0.5343168377876282
+  },
+  {
+    "rows": 8,
+    "seed": 42,
+    "initialization": "stratified",
+    "step": 30,
+    "compile_kl": 0.45726528763771057
+  },
+  {
+    "rows": 8,
+    "seed": 42,
+    "initialization": "stratified",
+    "step": 40,
+    "compile_kl": 0.4060364067554474
+  },
+  {
+    "rows": 8,
+    "seed": 42,
+    "initialization": "stratified",
+    "step": 50,
+    "compile_kl": 0.3841854929924011
+  },
+  {
+    "rows": 8,
+    "seed": 43,
+    "initialization": "stratified",
+    "step": 10,
+    "compile_kl": 0.651515543460846
+  },
+  {
+    "rows": 8,
+    "seed": 43,
+    "initialization": "stratified",
+    "step": 20,
+    "compile_kl": 0.5313208699226379
+  },
+  {
+    "rows": 8,
+    "seed": 43,
+    "initialization": "stratified",
+    "step": 30,
+    "compile_kl": 0.49116161465644836
+  },
+  {
+    "rows": 8,
+    "seed": 43,
+    "initialization": "stratified",
+    "step": 40,
+    "compile_kl": 0.4295670986175537
+  },
+  {
+    "rows": 8,
+    "seed": 43,
+    "initialization": "stratified",
+    "step": 50,
+    "compile_kl": 0.42413192987442017
+  },
+  {
+    "rows": 8,
+    "seed": 44,
+    "initialization": "stratified",
+    "step": 10,
+    "compile_kl": 0.8887102603912354
+  },
+  {
+    "rows": 8,
+    "seed": 44,
+    "initialization": "stratified",
+    "step": 20,
+    "compile_kl": 0.7811744809150696
+  },
+  {
+    "rows": 8,
+    "seed": 44,
+    "initialization": "stratified",
+    "step": 30,
+    "compile_kl": 0.6893525123596191
+  },
+  {
+    "rows": 8,
+    "seed": 44,
+    "initialization": "stratified",
+    "step": 40,
+    "compile_kl": 0.6390008330345154
+  },
+  {
+    "rows": 8,
+    "seed": 44,
+    "initialization": "stratified",
+    "step": 50,
+    "compile_kl": 0.5926439762115479
+  },
+  {
+    "rows": 32,
+    "seed": 42,
+    "initialization": "stratified",
+    "step": 10,
+    "compile_kl": 0.20369119942188263
+  },
+  {
+    "rows": 32,
+    "seed": 42,
+    "initialization": "stratified",
+    "step": 20,
+    "compile_kl": 0.18020465970039368
+  },
+  {
+    "rows": 32,
+    "seed": 42,
+    "initialization": "stratified",
+    "step": 30,
+    "compile_kl": 0.15819956362247467
+  },
+  {
+    "rows": 32,
+    "seed": 42,
+    "initialization": "stratified",
+    "step": 40,
+    "compile_kl": 0.15412192046642303
+  },
+  {
+    "rows": 32,
+    "seed": 42,
+    "initialization": "stratified",
+    "step": 50,
+    "compile_kl": 0.1443730890750885
+  },
+  {
+    "rows": 32,
+    "seed": 43,
+    "initialization": "stratified",
+    "step": 10,
+    "compile_kl": 0.19929586350917816
+  },
+  {
+    "rows": 32,
+    "seed": 43,
+    "initialization": "stratified",
+    "step": 20,
+    "compile_kl": 0.1694185733795166
+  },
+  {
+    "rows": 32,
+    "seed": 43,
+    "initialization": "stratified",
+    "step": 30,
+    "compile_kl": 0.15639552474021912
+  },
+  {
+    "rows": 32,
+    "seed": 43,
+    "initialization": "stratified",
+    "step": 40,
+    "compile_kl": 0.1477798968553543
+  },
+  {
+    "rows": 32,
+    "seed": 43,
+    "initialization": "stratified",
+    "step": 50,
+    "compile_kl": 0.14525842666625977
+  },
+  {
+    "rows": 32,
+    "seed": 44,
+    "initialization": "stratified",
+    "step": 10,
+    "compile_kl": 0.2506113350391388
+  },
+  {
+    "rows": 32,
+    "seed": 44,
+    "initialization": "stratified",
+    "step": 20,
+    "compile_kl": 0.1985197812318802
+  },
+  {
+    "rows": 32,
+    "seed": 44,
+    "initialization": "stratified",
+    "step": 30,
+    "compile_kl": 0.1750965416431427
+  },
+  {
+    "rows": 32,
+    "seed": 44,
+    "initialization": "stratified",
+    "step": 40,
+    "compile_kl": 0.166936457157135
+  },
+  {
+    "rows": 32,
+    "seed": 44,
+    "initialization": "stratified",
+    "step": 50,
+    "compile_kl": 0.161951944231987
+  },
+  {
+    "rows": 128,
+    "seed": 42,
+    "initialization": "stratified",
+    "step": 10,
+    "compile_kl": 0.16307148337364197
+  },
+  {
+    "rows": 128,
+    "seed": 42,
+    "initialization": "stratified",
+    "step": 20,
+    "compile_kl": 0.13453799486160278
+  },
+  {
+    "rows": 128,
+    "seed": 42,
+    "initialization": "stratified",
+    "step": 30,
+    "compile_kl": 0.12396311014890671
+  },
+  {
+    "rows": 128,
+    "seed": 42,
+    "initialization": "stratified",
+    "step": 40,
+    "compile_kl": 0.11573398858308792
+  },
+  {
+    "rows": 128,
+    "seed": 42,
+    "initialization": "stratified",
+    "step": 50,
+    "compile_kl": 0.0954161137342453
+  },
+  {
+    "rows": 128,
+    "seed": 43,
+    "initialization": "stratified",
+    "step": 10,
+    "compile_kl": 0.151233971118927
+  },
+  {
+    "rows": 128,
+    "seed": 43,
+    "initialization": "stratified",
+    "step": 20,
+    "compile_kl": 0.14274346828460693
+  },
+  {
+    "rows": 128,
+    "seed": 43,
+    "initialization": "stratified",
+    "step": 30,
+    "compile_kl": 0.11517953127622604
+  },
+  {
+    "rows": 128,
+    "seed": 43,
+    "initialization": "stratified",
+    "step": 40,
+    "compile_kl": 0.1007433831691742
+  },
+  {
+    "rows": 128,
+    "seed": 43,
+    "initialization": "stratified",
+    "step": 50,
+    "compile_kl": 0.08890019357204437
+  },
+  {
+    "rows": 128,
+    "seed": 44,
+    "initialization": "stratified",
+    "step": 10,
+    "compile_kl": 0.16109301149845123
+  },
+  {
+    "rows": 128,
+    "seed": 44,
+    "initialization": "stratified",
+    "step": 20,
+    "compile_kl": 0.14162740111351013
+  },
+  {
+    "rows": 128,
+    "seed": 44,
+    "initialization": "stratified",
+    "step": 30,
+    "compile_kl": 0.11974866688251495
+  },
+  {
+    "rows": 128,
+    "seed": 44,
+    "initialization": "stratified",
+    "step": 40,
+    "compile_kl": 0.10505938529968262
+  },
+  {
+    "rows": 128,
+    "seed": 44,
+    "initialization": "stratified",
+    "step": 50,
+    "compile_kl": 0.10062111169099808
+  }
+]

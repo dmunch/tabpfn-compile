@@ -1,0 +1,28 @@
+{
+  "dataset": "landsat-satellite",
+  "preregistered_device": "mps",
+  "completed_device": "cpu",
+  "reason": "Teacher inference exceeded the Apple MPS 8.29 GB allocation before optimization.",
+  "attempts": [
+    {
+      "device": "mps",
+      "result": "out_of_memory",
+      "log": "landsat-satellite-run.log"
+    },
+    {
+      "device": "mps",
+      "allocator_override": "PYTORCH_MPS_HIGH_WATERMARK_RATIO=0",
+      "result": "out_of_memory",
+      "log": "landsat-satellite-retry.log"
+    },
+    {
+      "device": "cpu",
+      "result": "completed_9_of_9",
+      "log": "landsat-satellite-cpu-fallback.log"
+    }
+  ],
+  "optimization_changes": "None: data, split, checkpoint, model commit, preprocessing, labels, initialization, budgets, seeds, optimizer, learning rate, minibatches, steps, objective, and iterate selection remained frozen.",
+  "reload_result": "0_of_9_optimized_artifacts_met_kl_tolerance",
+  "reload_tolerance": 1e-5,
+  "diagnostic": "landsat-satellite/artifact-verification-diagnostic.json"
+}

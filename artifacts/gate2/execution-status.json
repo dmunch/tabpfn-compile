@@ -1,0 +1,58 @@
+[
+  {
+    "dataset": "vehicle",
+    "started_at": "2026-09-15T19:50:34.819745+00:00",
+    "experiment_exit_code": 0,
+    "reference_exit_code": 0,
+    "verification_exit_code": 0,
+    "finished_at": "2026-09-15T19:51:35.482425+00:00"
+  },
+  {
+    "dataset": "blood-transfusion-service-center",
+    "started_at": "2026-09-15T19:51:35.484577+00:00",
+    "experiment_exit_code": 0,
+    "verification_exit_code": 0,
+    "finished_at": "2026-09-15T19:54:15.510671+00:00"
+  },
+  {
+    "dataset": "diabetes",
+    "started_at": "2026-09-15T19:54:15.513020+00:00",
+    "experiment_exit_code": 0,
+    "verification_exit_code": 0,
+    "finished_at": "2026-09-15T19:56:46.649192+00:00"
+  },
+  {
+    "dataset": "phoneme",
+    "started_at": "2026-09-15T19:56:46.651960+00:00",
+    "experiment_exit_code": 0,
+    "verification_exit_code": 0,
+    "finished_at": "2026-09-15T20:04:04.744769+00:00"
+  },
+  {
+    "dataset": "spambase",
+    "started_at": "2026-09-15T20:04:04.747451+00:00",
+    "experiment_exit_code": 0,
+    "verification_exit_code": 0,
+    "finished_at": "2026-09-15T20:21:14.636702+00:00"
+  },
+  {
+    "dataset": "balance-scale",
+    "started_at": "2026-09-15T20:21:14.642916+00:00",
+    "experiment_exit_code": 0,
+    "verification_exit_code": 1,
+    "finished_at": "2026-09-15T20:23:19.517116+00:00"
+  },
+  {
+    "dataset": "image-segmentation",
+    "started_at": "2026-09-15T20:23:19.519595+00:00",
+    "experiment_exit_code": 0,
+    "verification_exit_code": 0,
+    "finished_at": "2026-09-15T20:26:46.237878+00:00"
+  },
+  {
+    "dataset": "landsat-satellite",
+    "started_at": "2026-09-15T20:26:46.241243+00:00",
+    "experiment_exit_code": 1,
+    "finished_at": "2026-09-15T20:26:57.438410+00:00"
+  }
+]

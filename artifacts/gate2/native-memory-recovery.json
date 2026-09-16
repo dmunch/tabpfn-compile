@@ -1,0 +1,11 @@
+{
+  "spambase-run.log": [
+    "OOM: halving row_chunk_size to 1024",
+    "OOM: halving row_chunk_size to 512",
+    "OOM: halving row_chunk_size to 256",
+    "OOM: halving row_chunk_size to 128",
+    "OOM: halving row_chunk_size to 64",
+    "OOM: halving col_chunk_size to 2",
+    "OOM: halving col_chunk_size to 1"
+  ]
+}
